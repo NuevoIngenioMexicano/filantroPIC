@@ -24,6 +24,9 @@ Sponsor.add({
 		type: String,
 		default: ''
 	},
+	logo: {
+		type: Types.CloudinaryImage
+	}
 });
 
 /**

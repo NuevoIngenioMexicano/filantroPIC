@@ -56,7 +56,7 @@ $(document).ready(function() {
     var selector = $('.dropdown--cities');
     var state = $(this).attr('data-content');
 
-    if (state === '57b94284d1fb7cdb73847eb9') {
+    if (state === '57b9a7671322c4280dcb4647') {
       selector.find('.dropdown__title').html('¿En qué delegación?<i class="icon-chevron-down"></i>')
     }
 

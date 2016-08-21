@@ -39,7 +39,7 @@ block content
 				img(src="img/img2.jpg", alt="")
 				img(src="img/img3.jpg", alt="")
 		.wrapper.wrapper--default
-			h1 Sé parte de una comunidad de impacto
+			h1 Sé parte de la comunidad que está cambiando a México
 			.search
 				.col.one-quarter
 					.dropdown.dropdown--causes
@@ -84,5 +84,11 @@ block content
 								.campaign__details
 									h3.title--sm= campaign.name
 									p= campaign.description
+	section.sponsors
+		h2 Patrocinadores
+		if sponsors
+			each sponsor in sponsors
+				div(class="sponsor sponsor--" + sponsor.key)
+					img(src= sponsor._.logo.fit(150,80))
 block footer
 	include ../includes/footer

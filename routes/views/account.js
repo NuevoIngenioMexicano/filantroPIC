@@ -17,42 +17,32 @@ exports = module.exports = function(req, res) {
 
 	view.on('init', function(next) {
 
-			Campaign.model.findOne({key: req.params.key})
-      .exec(function(err, campaign) {
+		if (!req.user) {
+			res.redirect('/')
+		}
+
+		User.model.findOne({_id: req.user._id})
+		.populate('campaigns')
+		.exec(function(err, currentUser) {
 
 			if (err) {
 				res.serverError(err);
 			}
 
-			if (!campaign) {
-				res.notFound('Campaign no encontradas');
+			if (!currentUser) {
+				res.notFound('currentUser no encontrado');
 			}
 
-			if (campaign) {
-				console.log(campaign);
-        locals.campaign = campaign;
+			if (currentUser) {
+				console.log(currentUser);
+				locals.campaigns = currentUser.campaigns;
 				next();
 			}
 
 		});
-
 
 	});
 
-	view.on('post', function(next) {
-
-		User.model.findOneAndUpdate(
-			{_id: req.user._id},
-			{$addToSet: {campaigns: locals.campaign.id }},
-			function(err, user){
-				if (err) console.log(err);
-				if (user) console.log(user);
-				next();
-			}
-		);
-
-		});
-
-	view.render('campaign');
+	view.render('account');
 
 }

@@ -24,6 +24,9 @@ Campaign.add({
 		type: String,
 		default: ''
 	},
+	info: {
+		type: Types.Html, wysiwyg: true, height: 350,
+	},
 	cause: {
 		type: Types.Relationship,
 		ref: 'Cause'

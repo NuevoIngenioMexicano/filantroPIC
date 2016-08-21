@@ -233,14 +233,6 @@ exports = module.exports = function(req, res) {
 									return next({ message: 'Sorry, there was an error processing your account, please try again.' });
 								}
 
-								locals.existingUser.validateEmail(function(err) {
-									// if (err) return next(err);
-									if (err) {
-										console.error('===== ERROR sending reset password email =====');
-										console.error(err);
-									}
-								});
-
 								console.log('[auth.confirm] - Saved new user.');
 								console.log('------------------------------------------------------------');
 								return next();

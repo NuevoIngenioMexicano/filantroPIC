@@ -3,6 +3,7 @@ const async = require('async');
 const Campaign = keystone.list('Campaign');
 const State = keystone.list('State');
 const Sponsor = keystone.list('Sponsor');
+const Cause = keystone.list('Cause');
 
 exports = module.exports = function(req, res) {
 
@@ -24,8 +25,18 @@ exports = module.exports = function(req, res) {
 				.exec(callback);
 			},
 
+			causes: function(callback) {
+				Cause.model.find()
+					.exec(callback);
+			},
+
 			states: function(callback) {
 				State.model.find()
+					.exec(callback);
+			},
+
+			sponsors: function(callback) {
+				Sponsor.model.find()
 					.exec(callback);
 			},
 
@@ -43,6 +54,8 @@ exports = module.exports = function(req, res) {
 				console.log(results);
 				locals.campaigns = results.campaigns;
 				locals.states = results.states;
+				locals.causes = results.causes;
+				locals.sponsors = results.sponsors;
 
 				next();
 			}

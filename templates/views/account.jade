@@ -1,0 +1,28 @@
+extends ../layouts/default
+
+block intro
+	include ../includes/header
+	
+block content
+	section.intro
+		.overlay
+		//- .intro__imgs
+		//- 	img.full(src= campaign._.photo.fit(1500, 1500))
+		.wrapper.wrapper--default
+			.campaign__content
+				h1= 'Hola, ' + user.name
+	section.campaigns
+		.wrapper.wrapper--default
+			h2 Campañas en las que has participado
+			if !campaigns
+				p Aún no has participado en ninguna campaña
+			else 
+				each campaign in campaigns
+					a(href="/campaign/" + campaign.key).campaign.campaign--sm.col.one-quarter
+						.campaign__img
+							img(src= campaign._.photo.fill(350,350), alt="")
+						.campaign__details
+							h3.title--sm= campaign.name
+							p= campaign.description
+block footer
+	include ../includes/footer

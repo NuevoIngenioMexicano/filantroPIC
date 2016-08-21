@@ -38,7 +38,9 @@ exports = module.exports = function(app) {
 
 	// Public views
 	app.get('/', routes.views.index);
-	app.get('/campaign/:key', routes.views.campaign);
+	app.all('/campaign/:key', routes.views.campaign);
+	app.get('/como-funciona/', routes.views['how-it-works']);
+	app.get('/mi-cuenta/', routes.views.account);
 
 	// API
 	app.all('/api/v1/cities', keystone.middleware.api, routes.api.city);

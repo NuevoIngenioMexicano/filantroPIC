@@ -543,6 +543,10 @@ nav li {
       .dropdown--account .dropdown__menu li a:hover {
         background: #ebebeb; }
 
+footer {
+  height: 250px;
+  background: #202223; }
+
 /* --------------------- *\
 BUTTONS
 \* --------------------- */
@@ -779,7 +783,7 @@ input {
     position: relative;
     color: #fff;
     font-size: 50px;
-    max-width: 600px; }
+    max-width: 700px; }
 
 .search {
   position: relative;
@@ -835,7 +839,7 @@ input {
     margin: 1%;
     width: calc(25% - 2%); }
     .campaigns .campaign.one-half {
-      margin: 1%;
+      margin: .95%;
       width: calc(50% - 2%); }
     .campaigns .campaign:after {
       display: block;
@@ -867,6 +871,25 @@ input {
     .campaigns .campaign__details p {
       margin-bottom: 0;
       line-height: 1.2; }
+
+.sponsors {
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  box-shadow: 0 1px 1px #ebebeb; }
+  .sponsors h2 {
+    opacity: .7; }
+
+.sponsor {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1em; }
+
+.sponsor img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .5; }
 
 /* --------------------- *\
   	HOME
