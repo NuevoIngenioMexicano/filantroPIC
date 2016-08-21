@@ -14,6 +14,7 @@ block content
 				form(id="", method="post", action="")
 					input(type="submit",value="Participa", style="max-width: 200px;padding: .5em;").button.button--block__default
 	section.content
-		div!= campaign.info
+		.wrapper.wrapper--default
+			div!= campaign.info
 block footer
 	include ../includes/footer

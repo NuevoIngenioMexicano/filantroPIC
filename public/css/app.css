@@ -898,4 +898,9 @@ input {
   position: relative;
   z-index: 99; }
 
+section.content {
+  padding: 2em 0; }
+  section.content p {
+    color: #45444a; }
+
 /*# sourceMappingURL=app.css.map */
