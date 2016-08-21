@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block intro
+	include ../includes/header
+	
+block content
+	section.intro
+		.overlay
+		//- .intro__imgs
+		//- 	img.full(src= campaign._.photo.fit(1500, 1500))
+		.wrapper.wrapper--default
+			.campaign__content
+				h1= campaign.name
+				a.button.button--block__default(href="/participate") Participa
+block footer
+	include ../includes/footer

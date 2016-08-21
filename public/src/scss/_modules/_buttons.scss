@@ -1,0 +1,70 @@
+/* --------------------- *\
+BUTTONS
+\* --------------------- */
+
+button {
+	border: 0;
+}
+
+.button {
+	box-sizing: border-box;
+	padding: 20px 25px;
+	text-decoration: none;
+	border: 1px solid;
+	font-weight: 600;
+	transition: all .23s ease;
+	line-height: 1;
+	border-radius: 3px;
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+
+	&:hover {
+		background: $main-hover;
+	}
+}
+
+.button--facebook {
+	background: #3b5998;
+	width: 100%;
+	display: block;
+	margin: auto;
+	border-radius: 3px;
+	margin-bottom: 1em;
+	padding: 15px 0;
+	color: #fff;
+	border: 1px solid #29487d;
+}
+
+.button--block__default {
+  background: $alt;
+  border: 1px solid $alt-hover;
+  color: #fff;
+
+	&:hover {
+		background: $alt-hover;
+	}
+}
+
+.button--block__alt {
+  background: $main;
+  width: 100%;
+  border: 1px solid $main-hover;
+  color: #fff;
+
+	&:hover {
+		background: $main-hover;
+	}
+}
+
+.button--full {
+	width: 100%;
+}
+
+
+.button--sm {
+	padding: .5em 1em;
+	border-radius: 2px;
+}

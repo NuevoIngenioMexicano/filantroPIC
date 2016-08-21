@@ -1,0 +1,28 @@
+/* --------------------- *\
+	CONFIG
+\* --------------------- */
+
+div, section, input, form {
+	box-sizing: border-box;
+}
+
+ul {
+	li {
+		list-style: none;
+	}
+}
+
+.dropdown-overlay {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+section:after {
+    content: '';
+    display: table;
+    clear: both;
+}

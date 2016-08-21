@@ -1,0 +1,42 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 40 of compressed
+
+35: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'
+36: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'
+37: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'
+38: *\/
+39: body:before {
+40:   white-space: pre;
+41:   font-family: monospace;
+42:   content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 44 of compressed\A \A 39: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'\A 40: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'\A 41: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'\A 42: *\/\A 43: body:before {\A 44:   white-space: pre;\A 45:   font-family: monospace;\A 46:   content: \"Error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of compressed\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - compressed\A 3: \A 4: Backtrace:\A 5: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `read'\A 6: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'\A 7: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\"; }"; }
+
+Backtrace:
+compressed:40
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:483:in `block in tabulate'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:441:in `each'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:441:in `each_with_index'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:441:in `tabulate'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:406:in `_to_tree'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin.rb:108:in `method_missing'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+/Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `load'
+/Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'
+/Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'
+/Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 40 of compressed\A \A 35: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'\A 36: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'\A 37: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \"Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 44 of compressed\A \A 39: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/sass:23:in `<main>'\A 40: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'\A 41: /Users/Hector/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `<main>'\A 42: */\A 43: body:before {\A 44:   white-space: pre;\A 45:   font-family: monospace;\A 46:   content: \\"Error: Invalid property: \\\"Backtrace:\\\" (no value).\A         on line 4 of compressed\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - compressed\A 3: \A 4: Backtrace:\A 5: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `read'\A 6: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'\A 7: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Users/Hector/.rvm/gems/ruby-2.2.3/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\\"; }\"; }"; }

@@ -1,0 +1,20 @@
+/* --------------------- *\
+	FORMS
+\* --------------------- */
+
+input {
+	line-height: normal;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	height: 50px;
+	margin-bottom: 1em;
+	padding-left: 8px;
+
+	&:focus {
+		outline: none;
+		border: 1px solid #0a81c4;
+	}
+
+}

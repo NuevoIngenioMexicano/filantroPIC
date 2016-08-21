@@ -1,0 +1,18 @@
+header
+	.wrapper.wrapper--default
+		.row
+			a.brand-logo(href='/')
+				img(src='/img/filantropic-logo.png', alt='FilantroPic')
+			nav.align-right
+				ul
+					li: a(href="/como-funciona") Cómo funciona?
+					if !user
+						li: a.button.button--block__alt#signin(href='#') Inicia sesión
+					else
+						li.dropdown.dropdown--account
+							a(href="#")= user.name
+								i.icon-chevron-down
+							.dropdown__menu
+								ul
+									li: a(href="/mi-cuenta") Mi cuenta
+									li: a(href="/logout") Cerrar sesión

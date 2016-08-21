@@ -1,0 +1,37 @@
+/* --------------------- *\
+	GRID
+\* --------------------- */
+
+.wrapper {
+	width: 95%;
+	margin: auto;
+	position: relative;
+}
+
+.wrapper--default {
+	max-width: 1400px;
+}
+
+.wrapper-full {
+	height: 100%;
+}
+
+.col {
+	float: left
+}
+
+.one-half {
+	width: 50%;
+}
+
+.one-quarter {
+	width: 25%;
+}
+
+.one-fifth {
+	width: 20%;
+}
+
+.align-right {
+  float: right;
+}

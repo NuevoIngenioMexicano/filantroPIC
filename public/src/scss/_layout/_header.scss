@@ -1,0 +1,76 @@
+/* --------------------- *\
+  HEADER
+\* --------------------- */
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  padding: 1.5em 0;
+
+  .brand-logo {
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
+nav {
+  li {
+    display: inline-block;
+
+    &:last-child a {
+      margin-right: 0;
+    }
+
+    a {
+      color: $white;
+      font-size: 17px;
+      font-weight: 600;
+      margin: 2em;
+
+      &.button {
+        font-size: 16px;
+      }
+
+    }
+  }
+}
+
+.dropdown--account {
+
+  i {
+    margin-left: 5px;
+    top: 2px;
+    position: relative;
+  }
+
+  .dropdown__menu {
+    display: none;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    border-radius: 5px;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: block;
+
+      a {
+        color: #000;
+        margin: 0;
+        padding: .8em 1em;
+        display: block;
+
+        &:hover {
+          background: #ebebeb;
+        }
+      }
+    }
+  }
+
+}

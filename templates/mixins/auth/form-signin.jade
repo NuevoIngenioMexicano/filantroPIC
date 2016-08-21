@@ -1,0 +1,46 @@
+//-
+	Sign in
+	------------------------------
+
+	Args
+	* modal  - boolean
+	* initial [default "join"] - accepts "signin" | "join" | "password"
+
+mixin form-signin(args)
+	.auth-box.modal-pane-signin(class=args.modal && args.initial != 'signin' ? 'hidden' : null)
+		if args.modal
+			.modal-header
+				button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+				//- p Inicia Sesión con:
+		div(class=args.modal ? 'modal-body' : null)
+			.wrapper.wrapper--default
+				.row
+					.text--center
+
+					p.auth-form-divider: span.auth-form-divider-text Inicia Sesión
+						form.form--login(method='post', action='/login', role='signin', novalidate).stack-form
+							if path
+								input(type="hidden", name="target", value= path)
+							a(href='/auth/facebook?target=' + path).button--facebook
+								i.icon-facebook 
+								| Entra con Facebook
+							span.text--decoration Entra con tu correo electrónico
+							input(type='hidden', name='action', value='signin')
+							//- input(type='hidden', name='target', value=!args.modal ? form.target : page.path)
+							.form-groups
+								.form-group
+									input(type='email', name='email', placeholder='Correo Electrónico', id='signin-email', value=locals.form ? locals.form.email : null).form-control.form-control--first
+								.form-group
+									input(type='password', name='password', placeholder='Contraseña', id='signin-password', value='').form-control.form-control--last
+									p.forgot
+										a.forgot-password(href=args.modal ? js : '/forgot-password', rel=args.modal ? 'modal-pane' : null, data-modal-pane=args.modal ? 'password' : null, style="cursor:pointer") ¿Olvidaste tu contraseña?
+
+								button(type='submit').button.button--block__default.button--full Inicia Sesión
+							.row.text-muted.footer-form
+								p
+								.col.one-half: span ¿No tienes cuenta?
+								.col.one-half
+									if path
+										a(href=args.modal ? js : '/signup?target=' + path, rel=args.modal ? 'modal-pane' : null, data-modal-pane=args.modal ? 'join' : null).button.button--sm Regístrate
+									else
+										a(href=args.modal ? js : '/signup', rel=args.modal ? 'modal-pane' : null, data-modal-pane=args.modal ? 'join' : null).button.button--sm Regístrate

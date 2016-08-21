@@ -1,0 +1,20 @@
+extends ../../layouts/session
+
+block flash-messages
+	//- intentionally blank
+
+block content
+		.logo-center
+			a(href="/" title="Back to Home" class="logo")
+				img(src="/images/filantropic-logo.png" style="width:150px;")
+		.page-intro
+			//- h1 Regístrate
+			//- +flash-messages(messages)
+		.page-content
+			+auth-forms({ modal: false, initial: 'join' })
+
+block js
+	script.
+		jQuery(function($) {
+			$('.auth-form').find('.form-control').eq(0).focus().select();
+		});

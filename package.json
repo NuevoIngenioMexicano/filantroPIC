@@ -1,0 +1,30 @@
+{
+  "name": "quieroconciertosgratis",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/agilekitchen/quieroconciertosgratis_v2"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "cloudinary": "^1.3.1",
+    "csv": "^0.4.6",
+    "dotenv": "^1.2.0",
+    "keystone": "^0.3.17",
+    "lodash": "^3.10.1",
+    "mailgun-js": "^0.7.10",
+    "moment": "^2.13.0",
+    "mongoose": "^4.4.14",
+    "nodejs-nocaptcha-recaptcha": "^1.0.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.0",
+    "request": "^2.72.0",
+    "shortid": "^2.2.4",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "start": "node keystone.js",
+    "sass": "sass --watch public/src/scss/app.scss:public/css/app.css --style compressed"
+  }
+}

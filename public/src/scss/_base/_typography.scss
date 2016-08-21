@@ -1,0 +1,113 @@
+/* --------------------- *\
+  TYPOGRAPHY
+\* --------------------- */
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #45444a;
+}
+
+p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5;
+	margin: .5em 0 2em;
+}
+
+a {
+	color: $main;
+	text-decoration: none;
+	transition: all 100ms ease;
+
+	&:hover:not(.button) {
+		color: $main-hover;
+	}
+}
+
+.title {
+	font-weight: 600;
+	margin: 0;
+}
+
+.title--xl {
+	font-size: 55px;
+	line-height: 60px;
+	letter-spacing: .3px;
+}
+
+.title--lg {
+	font-size: 40px;
+	line-height: 45px;
+	letter-spacing: .3px;
+}
+
+// .title--md {
+// 	font-size: 20px;
+// 	line-height: 20px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 3px;
+// 	margin-bottom: 2em;
+// }
+
+.text--light {
+	color: $white;
+}
+
+.text--gray {
+	color: $gray;
+}
+
+.text--center {
+	text-align: center;
+}
+
+
+/* --------------------- *\
+  ICONS
+\* --------------------- */
+
+@font-face {
+  font-family: 'filantropic';
+  src:  url('../fonts/filantropic.eot?kv93f1');
+  src:  url('../fonts/filantropic.eot?kv93f1#iefix') format('embedded-opentype'),
+    url('../fonts/filantropic.ttf?kv93f1') format('truetype'),
+    url('../fonts/filantropic.woff?kv93f1') format('woff'),
+    url('../fonts/filantropic.svg?kv93f1#filantropic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'filantropic' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-chevron-right:before {
+  content: "\e901";
+}
+.icon-chevron-down:before {
+  content: "\e902";
+}
+.icon-snapchat-ghost:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
